@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About" description="About Lucas Cockerham — servant leader focused on empowering teams to build exceptional software.">
+  <div class="max-w-5xl mx-auto px-6 py-16">
+
+    <!-- Page header -->
+    <div class="mb-16">
+      <h1 class="text-5xl font-black tracking-tight mb-4">About Me</h1>
+      <p class="text-gray-500 text-lg">Servant leader focused on empowering teams to build exceptional software.</p>
+      <div class="mt-4 w-12 h-1 bg-gray-200 rounded"></div>
+    </div>
+
+    <!-- Two-column: text + photo -->
+    <div class="grid md:grid-cols-2 gap-12 mb-16">
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-xl font-bold mb-3">Professional Summary</h2>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>I am a strategic Director of Engineering with over two decades of experience navigating the complexities of software development, from hands-on coding to leading large-scale engineering organizations. My career has been defined by a commitment to servant leadership—removing obstacles, fostering collaboration, and empowering engineers to do their best work.</p>
+            <p>In 2025 I returned to OpenText to lead my prior organization, Communications, a product leader in the Customer Communications Management market.</p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold mb-3">Philosophy</h2>
+          <p class="text-gray-600 leading-relaxed">I believe that great software is built by great teams. My management style focuses on establishing clear goals and constraints, then trusting engineers to find the best path forward. Psychological safety, continuous learning, and a bias toward action are the cornerstones of every team I build.</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center md:justify-end items-start">
+        <div class="w-72 h-80 rounded-2xl overflow-hidden shadow-lg ring-1 ring-gray-200">
+          <img
+            src="/lucas-cockerham.jpg"
+            alt="Lucas Cockerham"
+            class="w-full h-full object-cover object-top"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Education, Advisory, Certs -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div>
+        <h2 class="text-xl font-bold mb-4">Education</h2>
+        <ul class="space-y-4">
+          <li>
+            <p class="font-semibold text-gray-900">Master of Science, Computer Science</p>
+            <p class="text-sm text-gray-500">University of Kentucky</p>
+          </li>
+          <li>
+            <p class="font-semibold text-gray-900">Bachelor of Science, Computer Science</p>
+            <p class="text-sm text-gray-500">Eastern Kentucky University</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-bold mb-4">Advisory Boards</h2>
+        <ul class="space-y-4">
+          <li>
+            <p class="font-semibold text-gray-900">Eastern Kentucky University</p>
+            <p class="text-sm text-gray-500">Alumni Board, Computer Science Advisory Board, Honors Alumni Board</p>
+          </li>
+          <li>
+            <p class="font-semibold text-gray-900">University of Kentucky</p>
+            <p class="text-sm text-gray-500">Computer Science Advisory Board</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-bold mb-4">Certifications</h2>
+        <ul class="space-y-4">
+          <li>
+            <p class="font-semibold text-gray-900">Professional Scrum Master I</p>
+            <p class="text-sm text-gray-500">Scrum.org</p>
+          </li>
+          <li>
+            <p class="font-semibold text-gray-900">Professional Scrum Product Owner I</p>
+            <p class="text-sm text-gray-500">Scrum.org</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div>
+      <h2 class="text-xl font-bold mb-6">Technical &amp; Leadership Skills</h2>
+      <div class="flex flex-wrap gap-3">
+        {[
+          'Technical Hiring & Recruitment',
+          'Team Building & Mentorship',
+          'Agile/Scrum Methodologies',
+          'Performance Management',
+          'Cloud Architecture (AWS, Azure, GCP)',
+          'CI/CD & Release Engineering',
+          'Kubernetes & Docker',
+          'C# / .NET & Java Ecosystems',
+          'AI Engineering',
+          'Strategic Planning',
+        ].map((skill) => (
+          <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">{skill}</span>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</BaseLayout>
