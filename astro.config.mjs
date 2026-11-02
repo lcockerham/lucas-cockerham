@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://lucas-cockerham.pages.dev',
+  site: 'https://lucascockerham.com',
   integrations: [sitemap()],
   output: 'static',
   vite: {
