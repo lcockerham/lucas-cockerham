@@ -11,7 +11,7 @@ Live: https://lucascockerham.com
 
 ## Development
 
-Requires Node 22.12+.
+Requires Node 22.23.4+.
 
 ```sh
 npm install
