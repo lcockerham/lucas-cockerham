@@ -10,7 +10,7 @@ Last verified working: 2026-06-12.
 - **Worker name:** `lucas-cockerham`
 - **Account ID:** `b4ea0223b90bf66e759dedecd0ce0aaf`
 - **Live domain:** https://lucascockerham.com
-- **Workers.dev URL:** https://lucas-cockerham.lcockerham.workers.dev
+- **Workers.dev URL:** disabled (`workers_dev: false` in `wrangler.jsonc`); was `lucas-cockerham.lcockerham.workers.dev`
 - **GitHub repo:** https://github.com/lcockerham/lucas-cockerham
 - **Dashboard:** https://dash.cloudflare.com/b4ea0223b90bf66e759dedecd0ce0aaf/workers/services/view/lucas-cockerham/production
 
